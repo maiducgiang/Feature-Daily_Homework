@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="name" type="String" />
+        <variable name="add" type="String" />
+        <variable name="photo" type="String" />
+        <variable name="follower" type="String" />
+        <variable name="follow" type="String" />
+        <variable name="codeCheck" type="String" />
+        <variable name="texthello" type="String" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/my_profile"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/textScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="demo"
+            android:inputType="text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <Button
+            android:id="@+id/nextScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="103dp"
+            android:layout_height="117dp"
+            android:contentDescription="@string/yeb"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/username"
+            app:srcCompat="@drawable/anh2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{name}"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image4" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{add}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="Follow, Follower, Photo, codeFollow, codeFollower, codePhoto"/>
+        <Button
+            android:id="@+id/buttonCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{codeCheck}"
+            app:layout_constraintTop_toBottomOf="@id/textView2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+        <TextView
+            android:id="@+id/Follower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/follower"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonCheck" />
+        <TextView
+            android:id="@+id/codeFollower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{follower}"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/Follower"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Follower" />
+
+        <TextView
+            android:id="@+id/Follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/follow"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toRightOf="@id/Follower"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonCheck" />
+        <TextView
+            android:id="@+id/codeFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{follow}"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Follower" />
+
+        <TextView
+            android:id="@+id/Photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/photo"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/Follower"
+            app:layout_constraintTop_toBottomOf="@id/buttonCheck" />
+
+
+        <TextView
+            android:id="@+id/codePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{photo}"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/Follower"
+            app:layout_constraintTop_toBottomOf="@id/Follower"/>
+
+
+
+        <ImageView
+            android:id="@+id/anh4"
+            android:layout_width="203dp"
+            android:layout_height="300dp"
+            app:layout_constraintTop_toBottomOf="@id/codeFollow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/anh5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/anh5"
+            android:contentDescription="@string/todo" />
+
+        <ImageView
+            android:id="@+id/anh5"
+            android:layout_width="203dp"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/anh6"
+            app:layout_constraintTop_toBottomOf="@id/codeFollow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/anh4"
+            android:contentDescription="@string/todo" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

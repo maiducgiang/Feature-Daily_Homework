@@ -12,7 +12,7 @@ import androidx.constraintlayout.widget.Group
 import androidx.databinding.DataBindingUtil
 import com.example.myapplication.databinding.ActivityMainBinding
 
-class information(val name: String, val add: String, val photo: Int, val follower: Int, val follow: Int)
+class Information(val name: String, val add: String, val photo: Int, val follower: Int, val follow: Int)
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         //Log.v("Activiti", "onCreate")
@@ -20,12 +20,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding: ActivityMainBinding = DataBindingUtil.setContentView(
                 this, R.layout.activity_main)
-        val Giang: information = information("Mai Duc Giang", "Hop Ly, Lap Thach, Vinh Phuc", 456, 602, 290)
-        binding.name = Giang.name
-        binding.add = Giang.add
-        binding.photo = Giang.photo.toString()
-        binding.follow = Giang.follow.toString()
-        binding.follower = Giang.follower.toString()
+        val giang: Information = Information("Mai Duc Giang", "Hop Ly, Lap Thach, Vinh Phuc", 456, 602, 290)
+        binding.name = giang.name
+        binding.add = giang.add
+        binding.photo = giang.photo.toString()
+        binding.follow = giang.follow.toString()
+        binding.follower = giang.follower.toString()
         binding.codeCheck = "ẩn thông tin"
         val button: Button = findViewById(R.id.buttonCheck)
         button.setOnClickListener {
@@ -61,7 +61,6 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
-
             override fun onTextChanged(s: CharSequence, start: Int,
                                        before: Int, count: Int) {
                 //trên văn bản thay đổi

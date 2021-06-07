@@ -1,0 +1,8 @@
+com/example/myapplication/BuildConfig.java
+ com.example.myapplication.BuildConfig
+com/example/myapplication/databinding/ActivityMainBinding.java
+ com.example.myapplication.databinding.ActivityMainBinding
+com/example/myapplication/databinding/ActivityScreen2Binding.java
+ com.example.myapplication.databinding.ActivityScreen2Binding
+com/example/myapplication/DataBindingTriggerClass.java
+ com.example.myapplication.DataBindingTriggerClass

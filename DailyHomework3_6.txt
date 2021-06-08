@@ -1,0 +1,33 @@
+Clean code and convention Kotlin
+Who: Ai là người cần clean code?
+	- Lập trình viên và những người sử dụng Kotlin và các ngôn ngữ lập trình khác cần phải clean code. 
+What: Clean code là gì?
+	- Clean code là việc áp dụng các quy ước về cách thức lập trình, cách tổ chức, code style.
+	-Tên của tệp phải giống với tên của lớp hoặc cấp cao nhất, phải mô tả những gì bên trong 
+	tệp thực hiện
+	-Bố cục 1 class: thuộc tính và khởi tạo->hàm khởi tạo phụ->phương pháp ->đối tượng đồng hành
+	-Quy tắc đặt tên:
+		+Tên của packages luôn là chữ thường và không dùng dấu gạch dưới(không khuyến 
+		khích nếu gồm >= 2, khi này các từ tiếp theo sau từ đầu tiên viết hoa chữ cái đầu)
+		+Tên của các class và đối tượng sử dụng viết hoa các chữ cái đầu(gồm cả chữ cái đầu tiên)
+		+Tên hàm, thuộc tính, biến cục bộ bắt đầu bằng chữ cái thường và chữ cái đầu các từ 
+		tiếp theo viết hoa
+		+Ngoại lệ: các hàm gốc được sử dụng để tạo các thể hiện của các lớp có thể có cùng 
+		tên với kiểu trả về trừu tượng:
+		+sử dụng 4 dấu cách để thụt lề(không dùng tab)
+		+Đặt dấu cách xung quanh toán tử nhị phân ( a + b). Ngoại lệ: không đặt dấu cách xung quanh toán tử "phạm vi thành" ( 0..i).
+
+		+Không đặt dấu cách xung quanh các toán tử một ngôi ( a++).
+
+		+Không gian đặt giữa các từ khoá dòng điều khiển ( if, when, for, và while) và việc mở ngoặc tương ứng.
+
+		+Không đặt khoảng trắng trước dấu ngoặc mở trong khai báo phương thức khởi tạo chính, khai báo phương thức hoặc lệnh gọi phương thức.
+When: Khi nào cần clean code?
+	- Bất cứ khi nào lập trình .
+Where: Clean code ở đâu?
+	- trong các project Koltin, thường tại android studio hoặc IntelliJ
+Why: Tại sao cần clean code?
+	- Để có sự thông nhất trong toàn thể cộng đồng Kotlin. Thuận tiện trong việc tham gia chung project.
+	
+How: Làm cách nào để clean code?
+	- như mục what. -.-

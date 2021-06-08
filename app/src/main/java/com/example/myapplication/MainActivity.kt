@@ -27,9 +27,9 @@ class MainActivity : AppCompatActivity() {
         binding.follow = Giang.follow.toString()
         binding.follower = Giang.follower.toString()
         binding.codeCheck = "ẩn thông tin"
-        val button: Button = findViewById(R.id.buttonCheck)
+        val button: Button = findViewById(R.id.button_main_checkgroup)
         button.setOnClickListener {
-            val group: Group = findViewById(R.id.group)
+            val group: Group = findViewById(R.id.group_main_information)
             if (group.visibility == View.GONE) {
                 group.visibility = View.VISIBLE
                 binding.codeCheck = "ẩn thông tin"
@@ -39,8 +39,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        val cost : EditText = findViewById(R.id.textScreen)
-        val nextScreen : Button = findViewById(R.id.nextScreen)
+        val cost : EditText = findViewById(R.id.edittext_main_nextpage)
+        val nextScreen : Button = findViewById(R.id.button_main_nextpage)
         nextScreen.isClickable = false
         cost.addTextChangedListener(object : TextWatcher {
 

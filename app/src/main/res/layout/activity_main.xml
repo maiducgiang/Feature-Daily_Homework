@@ -19,7 +19,7 @@
         tools:context=".MainActivity">
 
         <TextView
-            android:id="@+id/username"
+            android:id="@+id/textview_main_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -30,7 +30,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
         <EditText
-            android:id="@+id/textScreen"
+            android:id="@+id/edittext_main_nextpage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="demo"
@@ -39,25 +39,25 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"/>
         <Button
-            android:id="@+id/nextScreen"
+            android:id="@+id/button_main_nextpage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="next"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
         <ImageView
-            android:id="@+id/image4"
+            android:id="@+id/imageview_main_avatar"
             android:layout_width="103dp"
             android:layout_height="117dp"
             android:contentDescription="@string/yeb"
 
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/username"
+            app:layout_constraintTop_toBottomOf="@id/button_main_nextpage"
             app:srcCompat="@drawable/anh2" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textview_main_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{name}"
@@ -66,62 +66,63 @@
             app:layout_constraintEnd_toEndOf="parent"
 
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/image4" />
+            app:layout_constraintTop_toBottomOf="@id/imageview_main_avatar" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textview_main_address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{add}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/textview_main_name" />
 
         <androidx.constraintlayout.widget.Group
-            android:id="@+id/group"
+            android:id="@+id/group_main_information"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:constraint_referenced_ids="Follow, Follower, Photo, codeFollow, codeFollower, codePhoto"/>
+            app:constraint_referenced_ids="textview_main_follow,textview_main_follower,
+            textview_main_photo, textview_main_numberfollow, textview_main_numberfollower, textview_main_numberhoto"/>
         <Button
-            android:id="@+id/buttonCheck"
+            android:id="@+id/button_main_checkgroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{codeCheck}"
-            app:layout_constraintTop_toBottomOf="@id/textView2"
+            app:layout_constraintTop_toBottomOf="@id/textview_main_address"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             />
         <TextView
-            android:id="@+id/Follower"
+            android:id="@+id/textview_main_follower"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/follower"
             android:textSize="18sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/buttonCheck" />
+            app:layout_constraintTop_toBottomOf="@id/button_main_checkgroup" />
         <TextView
-            android:id="@+id/codeFollower"
+            android:id="@+id/textview_main_numberfollower"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{follower}"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintLeft_toRightOf="@id/Follower"
+            app:layout_constraintLeft_toRightOf="@id/textview_main_follower"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/Follower" />
+            app:layout_constraintTop_toBottomOf="@id/textview_main_follower" />
 
         <TextView
-            android:id="@+id/Follow"
+            android:id="@+id/textview_main_follow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/follow"
             android:textSize="18sp"
-            app:layout_constraintLeft_toRightOf="@id/Follower"
+            app:layout_constraintLeft_toRightOf="@id/textview_main_follower"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/buttonCheck" />
+            app:layout_constraintTop_toBottomOf="@id/button_main_checkgroup" />
         <TextView
-            android:id="@+id/codeFollow"
+            android:id="@+id/textview_main_numberfollow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{follow}"
@@ -129,52 +130,52 @@
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/Follower" />
-
+            app:layout_constraintTop_toBottomOf="@id/textview_main_follower" />
+        //exs
         <TextView
-            android:id="@+id/Photo"
+            android:id="@+id/textview_main_photo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/photo"
             android:textSize="18sp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/Follower"
-            app:layout_constraintTop_toBottomOf="@id/buttonCheck" />
+            app:layout_constraintRight_toLeftOf="@id/textview_main_follower"
+            app:layout_constraintTop_toBottomOf="@id/button_main_checkgroup" />
 
 
         <TextView
-            android:id="@+id/codePhoto"
+            android:id="@+id/textview_main_numberhoto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{photo}"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/Follower"
-            app:layout_constraintTop_toBottomOf="@id/Follower"/>
+            app:layout_constraintRight_toLeftOf="@id/textview_main_follower"
+            app:layout_constraintTop_toBottomOf="@id/textview_main_follower"/>
 
 
 
         <ImageView
-            android:id="@+id/anh4"
+            android:id="@+id/imageview_main_list1"
             android:layout_width="203dp"
             android:layout_height="300dp"
-            app:layout_constraintTop_toBottomOf="@id/codeFollow"
+            app:layout_constraintTop_toBottomOf="@id/textview_main_numberfollow"
             app:layout_constraintBottom_toBottomOf="parent"
             app:srcCompat="@drawable/anh5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/anh5"
+            app:layout_constraintEnd_toStartOf="@id/imageview_main_list2"
             android:contentDescription="@string/todo" />
 
         <ImageView
-            android:id="@+id/anh5"
+            android:id="@+id/imageview_main_list2"
             android:layout_width="203dp"
             android:layout_height="300dp"
             app:srcCompat="@drawable/anh6"
-            app:layout_constraintTop_toBottomOf="@id/codeFollow"
+            app:layout_constraintTop_toBottomOf="@id/textview_main_numberfollow"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/anh4"
+            app:layout_constraintStart_toEndOf="@id/imageview_main_list1"
             android:contentDescription="@string/todo" />
 
 

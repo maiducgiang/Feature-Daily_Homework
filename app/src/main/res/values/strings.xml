@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Profile</string>
+    <string name="my_profile">My Profile</string>
+    <string name="todo">TODO</string>
+    <string name="yeb">yeb</string>
+    <string name="mai_duc_giang">Mai Duc Giang</string>
+    <string name="ptit_itptitclub_nguyen_thu_nga_10_ielts"> Nguyen Thu Nga 10. Ielts</string>
+    <string name="photos">Photos</string>
+    <string name="folowers">Folowers</string>
+    <string name="folow">Folow</string>
+    <string name="followers">Followers</string>
+    <string name="follow">Follow</string>
+    <string name="photo">Photo</string>
+    <string name="_456">456</string>
+    <string name="follower">Follower</string>
+    <string name="noClick">bấm để xem</string>
+    <string name="trueClick">ẩn thông tin</string>
+    <string name="title_activity_screen2">Screen2</string>
+
+</resources>

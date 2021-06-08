@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                 //sau khi văn bản thay đổi
 
             }
-
+        //abcd
             override fun beforeTextChanged(s: CharSequence, start: Int,
                                            count: Int, after: Int) {
                 //trước khi văn bản thay đổi

@@ -1,20 +1,14 @@
 <resources>
     <string name="app_name">Profile</string>
-    <string name="my_profile">My Profile</string>
-    <string name="todo">TODO</string>
-    <string name="yeb">yeb</string>
-    <string name="mai_duc_giang">Mai Duc Giang</string>
-    <string name="ptit_itptitclub_nguyen_thu_nga_10_ielts"> Nguyen Thu Nga 10. Ielts</string>
-    <string name="photos">Photos</string>
-    <string name="folowers">Folowers</string>
-    <string name="folow">Folow</string>
-    <string name="followers">Followers</string>
-    <string name="follow">Follow</string>
-    <string name="photo">Photo</string>
-    <string name="_456">456</string>
-    <string name="follower">Follower</string>
-    <string name="noClick">bấm để xem</string>
-    <string name="trueClick">ẩn thông tin</string>
     <string name="title_activity_screen2">Screen2</string>
+    <string name="lich_trinh_di_lai_trong_24h">Lịch trình đi lại trong 24h:</string>
+    <string name="ho_va_ten">ho va ten</string>
+    <string name="ho_va_ten2">Họ và tên:</string>
+    <string name="da_tiep_xuc_voi">Đã tiếp xúc với ai:</string>
+    <string name="f1">F1</string>
+    <string name="f0">F0</string>
+    <string name="no">NO</string>
+    <string name="next">NEXT</string>
+    <string name="lich_trinh">lich trinh</string>
 
 </resources>

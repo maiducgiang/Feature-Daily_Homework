@@ -6,12 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.Group;
-import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.example.myapplication.R;
@@ -20,145 +19,51 @@ import java.lang.Object;
 
 public abstract class ActivityMainBinding extends ViewDataBinding {
   @NonNull
-  public final TextView Follow;
+  public final Button buttonMainNextscreen;
 
   @NonNull
-  public final TextView Follower;
+  public final EditText edittextMainName;
 
   @NonNull
-  public final TextView Photo;
+  public final EditText edittextMainSchedule;
 
   @NonNull
-  public final ImageView anh4;
+  public final RadioButton radioButtonMainF0;
 
   @NonNull
-  public final ImageView anh5;
+  public final RadioButton radioButtonMainF1;
 
   @NonNull
-  public final Button buttonCheck;
+  public final RadioButton radioButtonMainNo;
 
   @NonNull
-  public final TextView codeFollow;
+  public final RadioGroup radiogroupMainContact;
 
   @NonNull
-  public final TextView codeFollower;
+  public final TextView textViewMainContact;
 
   @NonNull
-  public final TextView codePhoto;
+  public final TextView textViewMainName;
 
   @NonNull
-  public final Group group;
-
-  @NonNull
-  public final ImageView image4;
-
-  @NonNull
-  public final Button nextScreen;
-
-  @NonNull
-  public final EditText textScreen;
-
-  @NonNull
-  public final TextView textView;
-
-  @NonNull
-  public final TextView textView2;
-
-  @NonNull
-  public final TextView username;
-
-  @Bindable
-  protected String mName;
-
-  @Bindable
-  protected String mAdd;
-
-  @Bindable
-  protected String mPhoto;
-
-  @Bindable
-  protected String mFollower;
-
-  @Bindable
-  protected String mFollow;
-
-  @Bindable
-  protected String mCodeCheck;
-
-  @Bindable
-  protected String mTexthello;
+  public final TextView textViewMainSchedule;
 
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView Follow, TextView Follower, TextView Photo, ImageView anh4, ImageView anh5,
-      Button buttonCheck, TextView codeFollow, TextView codeFollower, TextView codePhoto,
-      Group group, ImageView image4, Button nextScreen, EditText textScreen, TextView textView,
-      TextView textView2, TextView username) {
+      Button buttonMainNextscreen, EditText edittextMainName, EditText edittextMainSchedule,
+      RadioButton radioButtonMainF0, RadioButton radioButtonMainF1, RadioButton radioButtonMainNo,
+      RadioGroup radiogroupMainContact, TextView textViewMainContact, TextView textViewMainName,
+      TextView textViewMainSchedule) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.Follow = Follow;
-    this.Follower = Follower;
-    this.Photo = Photo;
-    this.anh4 = anh4;
-    this.anh5 = anh5;
-    this.buttonCheck = buttonCheck;
-    this.codeFollow = codeFollow;
-    this.codeFollower = codeFollower;
-    this.codePhoto = codePhoto;
-    this.group = group;
-    this.image4 = image4;
-    this.nextScreen = nextScreen;
-    this.textScreen = textScreen;
-    this.textView = textView;
-    this.textView2 = textView2;
-    this.username = username;
-  }
-
-  public abstract void setName(@Nullable String name);
-
-  @Nullable
-  public String getName() {
-    return mName;
-  }
-
-  public abstract void setAdd(@Nullable String add);
-
-  @Nullable
-  public String getAdd() {
-    return mAdd;
-  }
-
-  public abstract void setPhoto(@Nullable String photo);
-
-  @Nullable
-  public String getPhoto() {
-    return mPhoto;
-  }
-
-  public abstract void setFollower(@Nullable String follower);
-
-  @Nullable
-  public String getFollower() {
-    return mFollower;
-  }
-
-  public abstract void setFollow(@Nullable String follow);
-
-  @Nullable
-  public String getFollow() {
-    return mFollow;
-  }
-
-  public abstract void setCodeCheck(@Nullable String codeCheck);
-
-  @Nullable
-  public String getCodeCheck() {
-    return mCodeCheck;
-  }
-
-  public abstract void setTexthello(@Nullable String texthello);
-
-  @Nullable
-  public String getTexthello() {
-    return mTexthello;
+    this.buttonMainNextscreen = buttonMainNextscreen;
+    this.edittextMainName = edittextMainName;
+    this.edittextMainSchedule = edittextMainSchedule;
+    this.radioButtonMainF0 = radioButtonMainF0;
+    this.radioButtonMainF1 = radioButtonMainF1;
+    this.radioButtonMainNo = radioButtonMainNo;
+    this.radiogroupMainContact = radiogroupMainContact;
+    this.textViewMainContact = textViewMainContact;
+    this.textViewMainName = textViewMainName;
+    this.textViewMainSchedule = textViewMainSchedule;
   }
 
   @NonNull

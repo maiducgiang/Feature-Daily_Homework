@@ -4,6 +4,7 @@ package com.example.myapplication.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,22 +17,55 @@ import java.lang.Object;
 
 public abstract class ActivityScreen2Binding extends ViewDataBinding {
   @NonNull
-  public final TextView textHello;
+  public final Button buttonScreen2Next1;
+
+  @NonNull
+  public final TextView textViewScreen2Contact;
+
+  @NonNull
+  public final TextView textviewScreen2Name;
+
+  @NonNull
+  public final TextView textviewScreen2Schedule;
 
   @Bindable
-  protected String mTexthelloo;
+  protected String mName;
+
+  @Bindable
+  protected String mContact;
+
+  @Bindable
+  protected String mSchedule;
 
   protected ActivityScreen2Binding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView textHello) {
+      Button buttonScreen2Next1, TextView textViewScreen2Contact, TextView textviewScreen2Name,
+      TextView textviewScreen2Schedule) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.textHello = textHello;
+    this.buttonScreen2Next1 = buttonScreen2Next1;
+    this.textViewScreen2Contact = textViewScreen2Contact;
+    this.textviewScreen2Name = textviewScreen2Name;
+    this.textviewScreen2Schedule = textviewScreen2Schedule;
   }
 
-  public abstract void setTexthelloo(@Nullable String texthelloo);
+  public abstract void setName(@Nullable String name);
 
   @Nullable
-  public String getTexthelloo() {
-    return mTexthelloo;
+  public String getName() {
+    return mName;
+  }
+
+  public abstract void setContact(@Nullable String contact);
+
+  @Nullable
+  public String getContact() {
+    return mContact;
+  }
+
+  public abstract void setSchedule(@Nullable String schedule);
+
+  @Nullable
+  public String getSchedule() {
+    return mSchedule;
   }
 
   @NonNull

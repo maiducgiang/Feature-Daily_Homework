@@ -14,7 +14,10 @@ public class ActivityScreen2BindingImpl extends ActivityScreen2Binding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.textHello, 1);
+        sViewsWithIds.put(R.id.textview_screen2_name, 1);
+        sViewsWithIds.put(R.id.textview_screen2_schedule, 2);
+        sViewsWithIds.put(R.id.textView_screen2_contact, 3);
+        sViewsWithIds.put(R.id.button_screen2_next1, 4);
     }
     // views
     @NonNull
@@ -25,11 +28,14 @@ public class ActivityScreen2BindingImpl extends ActivityScreen2Binding  {
     // Inverse Binding Event Handlers
 
     public ActivityScreen2BindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 2, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 5, sIncludes, sViewsWithIds));
     }
     private ActivityScreen2BindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (android.widget.Button) bindings[4]
+            , (android.widget.TextView) bindings[3]
             , (android.widget.TextView) bindings[1]
+            , (android.widget.TextView) bindings[2]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);
@@ -41,7 +47,7 @@ public class ActivityScreen2BindingImpl extends ActivityScreen2Binding  {
     @Override
     public void invalidateAll() {
         synchronized(this) {
-                mDirtyFlags = 0x2L;
+                mDirtyFlags = 0x8L;
         }
         requestRebind();
     }
@@ -59,8 +65,14 @@ public class ActivityScreen2BindingImpl extends ActivityScreen2Binding  {
     @Override
     public boolean setVariable(int variableId, @Nullable Object variable)  {
         boolean variableSet = true;
-        if (BR.texthelloo == variableId) {
-            setTexthelloo((java.lang.String) variable);
+        if (BR.schedule == variableId) {
+            setSchedule((java.lang.String) variable);
+        }
+        else if (BR.name == variableId) {
+            setName((java.lang.String) variable);
+        }
+        else if (BR.contact == variableId) {
+            setContact((java.lang.String) variable);
         }
         else {
             variableSet = false;
@@ -68,8 +80,14 @@ public class ActivityScreen2BindingImpl extends ActivityScreen2Binding  {
             return variableSet;
     }
 
-    public void setTexthelloo(@Nullable java.lang.String Texthelloo) {
-        this.mTexthelloo = Texthelloo;
+    public void setSchedule(@Nullable java.lang.String Schedule) {
+        this.mSchedule = Schedule;
+    }
+    public void setName(@Nullable java.lang.String Name) {
+        this.mName = Name;
+    }
+    public void setContact(@Nullable java.lang.String Contact) {
+        this.mContact = Contact;
     }
 
     @Override
@@ -93,8 +111,10 @@ public class ActivityScreen2BindingImpl extends ActivityScreen2Binding  {
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping
-        flag 0 (0x1L): texthelloo
-        flag 1 (0x2L): null
+        flag 0 (0x1L): schedule
+        flag 1 (0x2L): name
+        flag 2 (0x3L): contact
+        flag 3 (0x4L): null
     flag mapping end*/
     //end
 }

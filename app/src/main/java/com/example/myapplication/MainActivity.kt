@@ -41,12 +41,12 @@ class MainActivity : AppCompatActivity() {
                         if(!name.text.isBlank() && !schedule.text.isBlank()){
                             next.isClickable = true
                             next.setOnClickListener(){
-                                setContentView(R.layout.activity_screen2)
-                                /*val intent: Intent = Intent(this@MainActivity, Screen2::class.java)
+                                //setContentView(R.layout.activity_screen2)
+                                val intent: Intent = Intent(this@MainActivity, Screen2::class.java)
                                 intent.putExtra("data", "Hello screen2!") // data: tên của kiểu dữ liệu được gửi, "Hello screen2!": giá trị data được gửi đi
                                 intent.putExtra("contact", "abc")
                                 intent.putExtra("schedule", "abc")
-                                startActivity(intent)*/
+                                startActivity(intent)
                             }
                         }
                     }
